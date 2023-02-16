@@ -20,7 +20,7 @@ public class MyFirstFiltr implements Filter {
         }
         if (request.getSession().getAttribute("check") == null) {
             if (request.getParameter("check") == null) {
-                String path = "/error";
+                String path = "/eror";
                 ServletContext servletContext = request.getServletContext();
                 RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("path");
                 requestDispatcher.forward(request, resp);

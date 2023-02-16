@@ -18,26 +18,22 @@ public class SecondServlet extends HttpServlet {
                 "<head>\n" +
                 "    <meta charset=\"UTF-8\">\n" +
                 "    <title>Shop</title>\n" +
-                "</head>\n" +
+                "</head>" +
                 "<body>\n" +
-
-                "<h1>\n" +
-                "\n" +
-                "<h1 >Dear</h1>\n"+  req.getSession().getAttribute("name")+
-
-                "\n" +
+                "<h1 align=\"centr\">\n" +
+                "    <h1 >Welcome to online shop!!!</h1>\n" +
+                "    <form action=\"/shop2\" method=\"get\">\n" +
+                "    <select name=\"list\" size=\"2\" >\n" +
+                "        <option> lazgan 100$</option>\n" +
+                "        <option> bolter 500$</option>\n" +
+                "        <option> chainsword 500$</option>\n" +
+                "        <option> power axe 700$</option>\n" +
+                "    </select>\n" +
+                "        <input type=\"submit\" value=\"submit\">\n" +
+                "     </form>\n" +
                 "</h1>\n" +
-                "<form action=\"/shop2\" method=\"get\">\n" +
-                      "  <select name=\"list\" size=\"4\" multiple>\n" +
-                        "        <option> lazgan 100$</option>\n" +
-                        "        <option> bolter 500$</option>\n" +
-                        "        <option> chainsword 500$</option>\n" +
-                        "        <option> power axe 700$</option>\n" +
-                        "    </select>\n" +
-                "        \n" +
-                "    <input type=\"submit\" value=\" go\">\n" +
                 "</body>\n" +
-                "</html>");
+                "    \n");
 
 
     }
